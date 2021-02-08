@@ -1,0 +1,55 @@
+run:
+    concurrency: 4
+    deadline: 5m
+    tests: true
+    issues-exit-code: 0
+
+output:
+#    format: junit-xml
+# https://json.schemastore.org/golangci-lint
+    format: colored-line-number
+
+linters:
+#    enable-all: true
+#    disable:
+#        - testpackage
+  disable-all: true
+  enable:
+    - bodyclose
+    - deadcode
+    - depguard
+    - dogsled
+    - dupl
+    - errcheck
+    - exhaustive
+    - funlen
+    - gochecknoinits
+    - goconst
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - golint
+    - gomnd
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - interfacer
+    - lll
+    - misspell
+    - nakedret
+    - noctx
+    - nolintlint
+    - rowserrcheck
+    - scopelint
+    - staticcheck
+    - structcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+    - whitespace
